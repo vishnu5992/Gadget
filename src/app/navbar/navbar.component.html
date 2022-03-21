@@ -1,0 +1,19 @@
+<div id="nav">
+    <h2 id="head">Budget Gadget</h2>
+    <ul>
+   <li><a (click)="changeImage()"  routerLink="home"><i class="fa fa-fw fa-home"  style="color: white;"></i> Home</a></li>
+   <li><a  (click)="changeImage()"  routerLink="about"><i class="fas fa-address-book"></i> About</a></li>
+   <li><a (click)="changeImage()" routerLink="cart"><i class="fa fa-shopping-cart"></i >  Cart</a></li>
+   <li><a (click)="changeImage()"  routerLink="contact"><i class="fa fa-phone-alt"></i>  Contact us</a></li>
+   <li><button (click)="changeImage()" routerLink="signup" id="btn">signup</button></li>
+</ul>
+</div>
+<div id="slider">
+    <figure>
+  <img *ngIf="imgVisible" src="https://cdn.pixabay.com/photo/2018/03/06/08/31/drone-3202860_960_720.jpg" alt="gadget">
+ <img *ngIf="imgVisible" src="https://cdn.pixabay.com/photo/2017/07/31/18/19/mobile-2559728_960_720.jpg">
+ <img *ngIf="imgVisible" src="https://cdn.pixabay.com/photo/2017/08/07/04/05/laptop-2599636_960_720.jpg">
+ <img  *ngIf="imgVisible"src="https://cdn.pixabay.com/photo/2015/09/01/03/42/smartwatch-916404_960_720.jpg">
+ <img *ngIf="imgVisible" src="https://cdn.pixabay.com/photo/2018/03/06/08/31/drone-3202860_960_720.jpg" alt="gadget">
+</figure>
+</div>

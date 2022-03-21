@@ -1,0 +1,54 @@
+<div class="home">
+<h1 class="head">400+ Cool Gadgets & New High Tech products!!</h1>
+<h2 id="coolgadgets">WATCHES AND PHONE ACCESSORIES!!</h2>
+<div class="products">
+   <div *ngFor="let product of Bestproducts">
+       <button (click)="onClick(product)">
+     <img src="{{product.imgUrl}}" alt="" id="coolGadgets">
+     <p>{{product.name}}</p>
+     </button>
+   </div>
+</div>
+<div class="filteredproducts"> 
+        <div *ngFor="let pro of fliteredproduct">
+              <img src="{{pro.productImg}}" alt="" id="prdt">
+              <div id="productContent">
+                 <div *ngFor="let star of stars">
+                    <img src="{{star.starImg}}" id="star">
+                  </div>
+
+                 <h3>{{pro.productName}}</h3>
+                 <p>{{pro.productDetails}}</p>
+                 <p>{{pro.productPrice|currency:"INR":"symbol"}}</p>
+              </div>
+              <button (click)="addtoCart(pro)" id="add">Add to cart</button>
+          </div>
+</div>
+
+<div class="second">
+   <h1 id="highTech">HIGH TECH COMPUTER GADGETS!!</h1>
+   <div class="computerGadgets">
+      <div *ngFor="let cg of secondProducts">
+         <button (click)="onSelect(cg)">
+         <img src="{{cg.imgUrl}}" alt="" id="prdt1">
+       <p>{{cg.name}}</p>
+       </button>
+      </div>
+   </div>
+   <div class="filteredGadgets">
+   <div *ngFor="let filter of filteredgadget">
+      <img src="{{filter.productImg}}" id="cgImage">
+      <div id="gadgetContent">
+         <div *ngFor="let star of stars">
+            <img src="{{star.starImg}}" id="star">
+          </div>
+      <h1>{{filter.productName}}</h1>
+      <h3>{{filter.productDetails}}</h3>
+      <p>{{filter.productPrice|currency:"INR":"symbol"}}</p>
+      <h3></h3>
+      </div>
+      <button (click)="addGadget(filter)" id="gad">Add to cart</button>
+   </div>
+   </div>
+</div>
+</div>

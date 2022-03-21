@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Merriweather:wght@300&family=Mukta:wght@300&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,400&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ #coolGadgets{
+    height: 70px;
+    width: 70px;
+} 
+button{
+    height: 110px;
+    width: 110px;
+    background-color: rgb(255, 173, 80);
+    border-radius: 15px;
+}
+ button :hover{
+    transition: 1s ease;
+    transform: rotate(360deg);
+} 
+#add{
+    height: 40px;
+    width: 100px;
+    padding: 2px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 100px;
+}
+.filteredproducts{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.home{
+    background: white;
+    width: 100%;
+}
+.head{
+    font-family: 'Gruppo', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    background: linear-gradient(to right,#f32170,#ff6b08,#cf23cf,#eedd44);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+#prdt{
+    height: 100px;
+    width: 150px;
+}
+
+#prdt1{
+    height: 70px;
+    width: 70px;
+}
+.computerGadgets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+}
+#coolgadgets{
+    font-family: 'Gruppo', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 70px;
+    margin-left: 500px;
+}
+#highTech{
+    font-family: 'Gruppo', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 500px;
+    font-size: 27px;
+    margin-top: -50px;
+}
+#rate{
+    height: 30px;
+    width: 30px;
+}
+.second{
+    margin-top: 100px;
+}
+#star{
+    height: 40px;
+    width: 80px;
+}
+#gad{
+    height: 40px;
+    width: 100px;
+    padding: 2px;
+    background-color: dodgerblue;
+    color: white;
+}
+#cgImage{
+    height: 100px;
+    width: 150px;
+}
+.filteredGadgets{
+    margin-top: 150px;
+    margin-left: 50px;
+}
