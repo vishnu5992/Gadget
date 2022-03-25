@@ -1,17 +1,22 @@
+<div class="main-container">
 <div id="cart">
   <h2 id="quo">Order and get your gadgets & free shipping for first two orders!!</h2>
   <div id="products">
-<div *ngFor=" let cart of orderedProducts">
+<div *ngFor=" let cart of orderedProducts let i = index">
       <img src="{{cart.productImg}}" id="img"><br>
           <h2><span>&starf;</span>{{cart.productName}}</h2>
       <p><span>&starf;</span>{{cart.productDetails}}</p>
       <p><span>&starf;</span>{{cart.productPrice|currency:"INR":"symbol"}}</p>
+      <button id="delete"(click)="delete(i)">DELETE</button>
+
 </div>
-<div *ngFor="let gadget of orderedItem">
+<div *ngFor="let gadget of orderedItem; let i = index" >
   <img src="{{gadget.productImg}}" id="computerGadgets">
   <h2><span>&starf;</span>{{gadget.productName}}</h2>
   <p><span>&starf;</span>{{gadget.productDetails}}</p>
   <p><span>&starf;</span>{{gadget.productPrice|currency:"INR":"symbol"}}</p>
+  <button id="delete"(click)="deletegadget(i)">DELETE</button>
+
 </div>
 </div>
 <div id="orders">
@@ -21,5 +26,6 @@
 <button id="buy" (click)="clicked()">BUY NOW</button>
 <button id="save">Save for Later</button><br><br>
 <h2 *ngIf="ifclicked" id="msg">Product ordered sucessfully🤗</h2>
+</div>
 </div>
 </div>

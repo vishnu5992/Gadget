@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 
+
 }
  #coolGadgets{
     height: 70px;
@@ -12,7 +13,7 @@
 button{
     height: 110px;
     width: 110px;
-    background-color: rgb(255, 173, 80);
+    background-color: white;
     border-radius: 15px;
 }
  button :hover{
@@ -34,6 +35,10 @@ button{
     margin-top: 100px;
 }
 .filteredproducts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 150px;
     margin-left: 50px;
 }
@@ -115,6 +120,14 @@ font-family: 'Ubuntu', sans-serif;
     width: 150px;
 }
 .filteredGadgets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 150px;
-    margin-left: 50px;
+    margin-left: 80px;
+}
+.home{
+        background: #bbbbf5;
+
 }

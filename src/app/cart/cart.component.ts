@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
     orderedItem : SecondProduct[] =[]
     public ifclicked = false 
     item=0
+    cartItemCount =0
   constructor(private fs:ProductserviceService, private gs:GadgetserviceService) { }
 
   ngOnInit(): void {
@@ -28,4 +29,24 @@ export class CartComponent implements OnInit {
 
        type==='add'?this.item++:this.item--;
    }
+ getCartItemCount(){
+   this.cartItemCount = this.orderedProducts.length
+ }
+ getCartGadgetCount(){
+   
+ }
+ delete(index:any){
+ let confrimDelete = confirm('Are you sure you want to delete')
+ if(confrimDelete==true){
+ this.orderedProducts.splice(index,1)  
+ this.getCartItemCount()
+ }
+ }
+ deletegadget(index:any){
+   let confrimDelete = confirm('Are you sure want to delete')
+   if(confrimDelete==true){
+     this.orderedItem.splice(index,1)
+   }
+ }
 }
+
